@@ -34,7 +34,18 @@ c2s/
 ```
 ## 🚀 Execução Rápida
 
-Para configurar o ambiente, instalar dependências, popular o banco de dados e executar o projeto, basta rodar:
+1. **Clone o repositório:**
+
+Para baixar o repositorio rode o comando abaixo.
+
+```bash
+git clone https://github.com/Victor5g/Agente-de-Veiculos-C2S.git
+cd Agente-de-Veiculos-C2S
+```
+
+2. **Configurar ambiente:**
+
+Para configurar o ambiente, instalar dependências, e executar o projeto, rode o comando abaixo na raiz do projeto em c2s/
 
 ```bash 
 bash setup.sh
@@ -44,4 +55,10 @@ Caso tenha problemas de permissão, rode antes!!
 
 ```bash 
 chmod +x setup.sh
+```
+
+Dica, na primeira execução, digite s para aceitar a opcao de popular o banco de dados antes de realizar a pesquisa!!!
+
+```bash 
+🗄️  Deseja popular o banco de dados com dados randomicos ? (s/n): s
 ```
