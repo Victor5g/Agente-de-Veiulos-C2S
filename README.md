@@ -1,63 +1,60 @@
-# C2S – Agente Virtual de Veículos
+# C2S – Virtual Vehicle Agent  
 
-Sistema cliente-servidor em Python, que simula um agente virtual para consulta de veículos.
+A client-server system in Python that simulates a virtual agent for vehicle queries.  
 
-## 🚗 Funcionalidades
+## 🚗 Features  
+- **MCP Protocol**: Communication via Model Context Protocol.  
+- **Vehicle Queries**: Filter by brand, year, fuel type, etc.  
+- **Conversational Agent**: Interprets natural language inputs.  
+- **Local Database**: 500+ fictional vehicles with SQLite.  
+- **Modular Architecture**: Clean and scalable design.  
 
-- Comunicação via protocolo MCP (Model Context Protocol)
-- Consulta de veículos a partir de filtros como marca, ano, tipo de combustível etc.
-- Agente conversacional que interpreta frases naturais
-- Banco de dados local com mais de 500 veículos fictícios
-- Arquitetura limpa e modular
+## 🛠️ Technologies  
+- Python 3.10+  
+- SQLite + SQLAlchemy (ORM)  
+- Faker (test data generation)  
+- `tabulate` (CLI table formatting)  
+- TCP/IP Sockets  
+- Bash (automation scripts)  
 
-## 🛠️ Tecnologias Utilizadas
-
-- Python 3.10+
-- SQLite + SQLAlchemy
-- Faker
-- tabulate
-- Socket TCP/IP
-- Scripts automatizados com Bash
-
-## 📁 Estrutura do Projeto
-
+## 📁 Project Structure  
 ```bash
 c2s/
-├── client/ # Agente usados pelo cliente
-├── database/ # Modelos, banco de dados e seed
-├── server/ # Agente usado pelo servidor MCP
-├── main_client.py # Inicializa o cliente
-├── main_server.py # Inicializa o servidor
-├── setup.sh # Executa tudo de forma automática
-├── requirements.txt # Dependências
-└── README.md # Documentação
+├── client/          # Client-side agent
+├── database/        # DB models, migrations, and seeding
+├── server/         # MCP protocol server
+├── main_client.py   # Client entry point
+├── main_server.py   # Server entry point
+├── setup.sh         # 1-click setup script
+├── requirements.txt # Dependencies
+└── README.md        # You’re here :)
 ```
-## 🚀 Execução Rápida
+## 🚀 Quick Start
 
-1. **Clone o repositório:**
+1. **Clone the repo::**
 
-Para baixar o repositorio rode o comando abaixo.
+To download the repository, run the command below.
 
 ```bash
 git clone https://github.com/Victor5g/Agente-de-Veiculos-C2S.git
 cd Agente-de-Veiculos-C2S
 ```
 
-2. **Configurar ambiente:**
+2. **Set up the environment:**
 
-Para configurar o ambiente, instalar dependências, e executar o projeto, rode o comando abaixo na raiz do projeto em c2s/
+To set up the environment, install dependencies, and run the project, execute the command below in the root directory of the project under `c2s/`.
 
 ```bash 
 bash setup.sh
 ```
 
-Caso tenha problemas de permissão, rode antes!!
+If you encounter permission issues, run this first!!
 
 ```bash 
 chmod +x setup.sh
 ```
 
-Dica, na primeira execução, digite s para aceitar a opcao de popular o banco de dados antes de realizar a pesquisa!!!
+Tip: On the first run, type **y** to accept the option to populate the database before performing the search!!!
 
 ```bash 
 🗄️  Deseja popular o banco de dados com dados randomicos ? (s/n): s
